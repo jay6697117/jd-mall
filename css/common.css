@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+html {
+  /* 设置根元素字体大小: 1rem === 100rpx | 0.01rem === 1rpx | 100vw就是设备的宽度 等于750rpx 等于7.5rem */
+  font-size: calc((100vw / 750) * 100);
+}
+
+body {
+  /* 注释:0.32rem 750px设备宽度下等于32px; 不论设备宽度多少都等于32rpx */
+  font-size: 0.32rem;
+  /* 当html标签无背景样式时，body的背景色其实不是body标签的背景色，而是浏览器的。一旦html标签含有背景色，则body的背景色变成了正常的body标签自己的背景色，而此时的html标签最顶级，背景色被浏览器获取，成为浏览器的背景色。 */
+  background-color: #f1f1f1;
+}
+
+/* ====== 媒体查询 Media Queries ====== */
+
+/* --- Mobile First Method --- */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
+
+/* --- Non-Mobile First Method --- */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}

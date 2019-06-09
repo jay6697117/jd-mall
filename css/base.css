@@ -1,0 +1,125 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /*去除移动端点击产生的高亮状态*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+textarea, input{
+    border: none;
+    outline: none;
+    /*去除iOS系统默认的扁平化*/
+    -webkit-appearance: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    height: 0;
+    line-height: 0;
+    display: block; /*出错点*/
+    visibility: hidden;
+    clear: both;
+}
+
+/*抽取所有类前缀为icon_*/
+[class^='icon_']{
+    background: url("../images/sprites.png") no-repeat;
+    -webkit-background-size:200px 200px;
+    background-size:200px 200px;
+}
+
+.none_bottom_border{
+    border-bottom: 0 !important;
+}
+
+/*
+  导航共有的样式
+*/
+.header{
+    width: 100%;
+    height: 44px;
+    background: url("../images/header-bg.png") repeat-x;
+    -webkit-background-size:1px 44px;
+    background-size:1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.header .icon_back{
+    width: 40px;
+    height: 44px;
+    background-position: -20px 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 12px 10px;
+
+    /*背景图的定位从内容开始计算*/
+    background-origin: content-box;
+    /*背景图从内容开始显示*/
+    background-clip: content-box;
+}
+
+.header .icon_menu{
+    width: 40px;
+    height: 44px;
+    background-position: -60px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 10px;
+
+    /*背景图的定位从内容开始计算*/
+    background-origin: content-box;
+    /*背景图从内容开始显示*/
+    background-clip: content-box;
+}
+
+.header form{
+    width: 100%;
+    height: 44px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header form input{
+    width: 100%;
+    height: 34px;
+    border: 1px solid #e0e0e0;
+    margin-top: 5px;
+}
+
+.header h3{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: normal;
+    font-size: 16px;
+}

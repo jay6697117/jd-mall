@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* 默认盒模型box-sizing都设置成border-box */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 清除默认内外边距 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+hr,
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/* 去除 ul ol 里面的li标签的默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* a标签样式重置  */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* img标签样式重置 */
+img {
+  /* 避免元素底部4px的hack */
+  display: block;
+  border: none;
+}
+
+/* 将媒体标签设置为块级元素, 避免元素底部4px的hack */
+audio,
+video,
+embed,
+object {
+  display: block;
+}
+
+/* iframe标签样式重置*/
+iframe {
+  display: block;
+}
+
+/* fieldset标签样式重置*/
+fieldset {
+  border: none;
+}
+
+/* table标签样式重置 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  /* 设置伪元素的内容为空 */
+  content: '';
+  /* 伪元素的高度为0 */
+  height: 0;
+  /* 伪元素的行高为0 */
+  line-height: 0;
+  /* 伪元素以块级元素显示并占满剩余空间 */
+  display: block;
+  /* 将伪元素隐藏 */
+  visibility: hidden;
+  /* 清除左右两边浮动 */
+  clear: both;
+}
+.clearfix {
+  /*兼容IE6-IE7*/
+  *zoom: 1;
+}

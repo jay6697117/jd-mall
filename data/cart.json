@@ -1,0 +1,28 @@
+{
+  "allShops": {
+    "totalMoney": 0,
+    "shopList": [
+      {
+        "shopId": "1001",
+        "shopName": "360智能摄像机云台版 全景监控 360全景云台1080P",
+        "shopPrice": 299.0,
+        "shopNumber": 1,
+        "shopImage": "images/img_01.jpg"
+      },
+      {
+        "shopId": "1002",
+        "shopName": "尼康（Nikon） D610 单反机身",
+        "shopPrice": 7199.0,
+        "shopNumber": 1,
+        "shopImage": "images/img_02.jpg"
+      },
+      {
+        "shopId": "1003",
+        "shopName": "荣耀 畅玩6X 4GB 32GB 全网通4G手机 高配版 冰河银",
+        "shopPrice": 1299.0,
+        "shopNumber": 1,
+        "shopImage": "images/img_03.jpg"
+      }
+    ]
+  }
+}

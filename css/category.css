@@ -1,0 +1,86 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*中间主要的内容*/
+.category_main {
+  width: 100%;
+  height: 100%;
+  /*background-color: red;*/
+  /*出错点*/
+  padding-top: 45px;
+}
+
+/*
+  左边
+*/
+.category_main_left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.category_main_left ul li {
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ccc;
+}
+
+.category_main_left ul li.current {
+  background-color: #fff;
+  border-right: none;
+}
+
+.category_main_left ul li.current a {
+  color: #e9232c;
+}
+
+.category_main_left ul li a {
+  width: 100%;
+  display: block;
+}
+
+/*
+  右边
+*/
+/*
+  一旦设置当前的标签为overflow: hidden; 当前标签就会被当做一个绝缘体,占满剩余部分
+*/
+.category_main_right {
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 8px;
+}
+
+.category_right_banner img {
+  display: block;
+  width: 100%;
+}
+
+/* .category_box {} */
+
+.category_box h3 {
+  margin: 15px 0 10px;
+}
+
+.category_box ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.category_box ul li img {
+  display: block;
+  margin: 0 auto;
+}
+
+.category_box ul li p {
+  margin-bottom: 5px;
+}
