@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "got": "^8.0.3"
+    "got": "^11.8.5"
   },
   "deprecated": false,
   "description": "The HTTP client for Vue.js",
